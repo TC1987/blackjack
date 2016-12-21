@@ -1,6 +1,14 @@
 class Hand(object):
     def __init__(self):
         self.cards = []
+        self.balance = 1000
+        self.request_loan = 3
+
+    def get_balance(self):
+        return self.balance
+
+    def get_loan(self):
+        return self.request_loan
 
     def add_card(self, card):
         self.cards.append(card)
