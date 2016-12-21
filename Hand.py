@@ -7,6 +7,10 @@ class Hand(object):
     def get_balance(self):
         return self.balance
 
+    def set_balance(self, amount):
+        self.balance += amount
+        print self.balance
+
     def get_loan(self):
         return self.request_loan
 
