@@ -9,17 +9,17 @@ class Hand(object):
         print self.cards
 
     def get_score(self):
-        score = 0
+        total_score = 0
 
         for card in self.cards:
-            score += card.value
+            total_score += card.value
 
-        return score
+        return total_score
 
     def is_busted(self):
-        score = self.get_score
+        score = self.get_score()
 
         if score > 21:
-            return true
+            return True
         else:
-            return false
+            return False
